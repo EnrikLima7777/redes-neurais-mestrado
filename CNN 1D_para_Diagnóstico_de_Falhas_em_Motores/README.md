@@ -23,6 +23,6 @@ A rede neural possui a seguinte arquitetura:
 6. Outra camada Dropout (0.3): Para reduzir overfitting.
 7. Camada de saída (Dense): 1 neurônio com ativação sigmoid, que gera a classificação final (saudável ou com falha).
 
-3. Treinamento do Modelo
-   
+
+3. Treinamento do Modelo  
 O modelo é treinado usando EarlyStopping para evitar overfitting. Ele monitora a perda da validação e interrompe o treinamento caso não haja melhorias após 10 épocas. O treinamento é feito por 50 épocas, com um batch size de 32.
