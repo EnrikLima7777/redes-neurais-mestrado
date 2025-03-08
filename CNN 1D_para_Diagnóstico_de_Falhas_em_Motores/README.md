@@ -19,12 +19,19 @@ d. Pré-processamento: Os dados são remodelados para o formato adequado à CNN 
 2. Estrutura da Rede Neural
 
 A rede neural possui a seguinte arquitetura:
+
 a. Camada de entrada: Input(shape=(3,1)), onde os três valores de corrente são usados como entrada.
+
 b. Camada convolucional 1D (Conv1D): Utiliza 32 filtros, um kernel de tamanho 2 e ativação ReLU, com regularização L2(0.001).
+
 c. Camada Dropout (0.5): Reduz overfitting.
+
 d. Camada Flatten: Transforma os dados da convolução em uma única dimensão.
+
 e. Camada densa (Dense): 64 neurônios, ativação ReLU, regularização L2(0.01).
+
 f. Outra camada Dropout (0.3): Para reduzir overfitting.
+
 g. Camada de saída (Dense): 1 neurônio com ativação sigmoid, que gera a classificação final (saudável ou com falha).
 
 3. Treinamento do Modelo  
